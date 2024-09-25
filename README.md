@@ -10,6 +10,7 @@ Group Members:
 **Description of the Problem Domain and Why We Chose It:**
 
 In recent years, the increasing focus on Environmental, Social, and Governance (ESG) issues has pushed companies to rethink how they manage their impact on the world. However, many organizations struggle to monitor and improve their ESG performance effectively. This challenge often arises due to the complexity of collecting and analyzing relevant data, and the lack of clear frameworks for ESG reporting and improvement. Recognizing these challenges, we chose to develop an ESG Compliance Monitor to address this issue.
+
 As a team, we are passionate about environmental sustainability and social responsibility, and we believe that by creating a tool to help companies improve their ESG performance, we can contribute to a broader positive impact. The ESG Compliance Monitor offers an easy-to-use platform for businesses to track key ESG metrics, ensure compliance with regulations, and improve their overall sustainability profile. By leveraging established standards like GRI and ISO 26000, companies can measure their progress and make informed decisions about their ESG strategies. Through this solution, we aim to help companies in reducing their environmental footprint, leading to a more sustainable and equitable business environment.
 
 **User Stories**
