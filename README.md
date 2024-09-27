@@ -6,4 +6,4 @@ Group Members:
 - Marcus Eduard - 316974
     GitHub MarcusEduard
 
-[https://github.com/JasminTazli/DNDProject/blob/main/Blog1%20-%20HandIn)
+[https://github.com/JasminTazli/DNDProject/blob/main/Blog1.md)
