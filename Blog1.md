@@ -12,6 +12,7 @@ By leveraging established standards like GRI and ISO 26000, companies can measur
 Through this solution, we aim to help companies in reducing their environmental footprint, leading to a more sustainable and equitable business environment.
 
 Our idea is therefore - ESG Compliance Monitor
+
 A web application that helps companies monitor and improve their ESG efforts. It should include:
 RESTful Webservice: Handling of data collection from internal systems (e.g., calculating the environmental impact of their products).
 Login Functionality: Different roles (administrator, employee, etc.), which can log in and access relevant data.
