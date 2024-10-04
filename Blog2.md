@@ -23,6 +23,7 @@ public class EsgData
 ```
 Next, the EsgContext class acts as a bridge between the application and the database, using EF Core to map our model to a database table. It is defined as follows:
 
+```
 using Microsoft.EntityFrameworkCore;
 namespace ESGApi;
 public class EsgContext : DbContext
@@ -33,6 +34,7 @@ public class EsgContext : DbContext
     }   
 public DbSet<EsgData> EsgData { get; set; } = null!;
 }
+```
 By leveraging an in-memory database through EF Core, we can effectively develop and test the API without the overhead of managing a persistent database. The in-memory option allows to focus on functionality without the complexities of data persistence during the early stages of development.
 
 The core functionality of the API resides in the EsgDataController. This controller is responsible for managing the HTTP requests, and it includes methods for each of the CRUD operations. Here’s an example of  the POST request to create a new EsgData entry is handled: 
