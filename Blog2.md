@@ -3,17 +3,24 @@ In developing our RESTful web API, we have constructed a structure that allows f
 
 The foundational component of our API is the EsgData model. This class serves as a representation of the data structure, encapsulating essential properties like Id, CompanyName, CarbonFootprint, WaterUsage, EmployeeSatisfaction, and ReportingDate. Here’s a code snippet that illustrates this model:
 
-namespace ESGApi;
+```namespace ESGApi;
+
 public class EsgData
+
 {
     public int Id { get; set; }
+    
     public string CompanyName { get; set; }
+    
     public double CarbonFootprint { get; set; }
+    
     public double WaterUsage { get; set; }
+    
     public int EmployeeSatisfaction { get; set; }
+    
     public DateTime ReportingDate { get; set; }
 }
-
+```
 Next, the EsgContext class acts as a bridge between the application and the database, using EF Core to map our model to a database table. It is defined as follows:
 
 using Microsoft.EntityFrameworkCore;
