@@ -5,8 +5,8 @@ When logged on to the Web Application the user is greeted with “Hello ..”
 Next the user can click on ESG Data in the navigation bar. 
 When this is clicked the ESG Data is displayed and the user can click on the specific data / KPI that they want to view. 
 ![62be3d58-d98b-4363-bac8-9c8003153498](https://github.com/user-attachments/assets/d3fbf028-28c7-4df2-9425-433d627858e9)
-`code`
 
+`code`
 @page "/esgdata"
 
 <PageTitle>ESG Data</PageTitle>
