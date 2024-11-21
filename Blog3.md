@@ -5,6 +5,7 @@ When logged on to the Web Application the user is greeted with “Hello ..”
 Next the user can click on ESG Data in the navigation bar. 
 When this is clicked the ESG Data is displayed and the user can click on the specific data / KPI that they want to view. 
 ![62be3d58-d98b-4363-bac8-9c8003153498](https://github.com/user-attachments/assets/d3fbf028-28c7-4df2-9425-433d627858e9)
+`code`
 
 @page "/esgdata"
 
@@ -131,7 +132,7 @@ else
         public string? Recommendation { get; set; }
     }
 }
-
+`code`
 
 When "Gas Emissions" is clicked the user gets an overview of the date, the exact gas emission, a summary of "is it good or bad" and a recommendation to what the company can do in order to either improve or if they are on the right track. 
 ![b855487d-8d4c-4811-84e4-17947a06fb1e](https://github.com/user-attachments/assets/4bcf6171-f240-4350-966b-7839b2854fa1)
