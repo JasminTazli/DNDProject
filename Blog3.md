@@ -13,6 +13,7 @@ The same goes for "Carbon Footprint", when this is clicked the user gets an over
 ![17f3501a-9cd0-488d-a561-9323ff711334](https://github.com/user-attachments/assets/e6d02a9a-4d4c-475e-afef-97e719a81d1b)
 
 The key requirement that was fulfilled with this web application is 
-"As a manager, I want to access a user-friendly dashboard in Blazor where I can see ESG key metrics over time and receive recommendations for improvements, 
-so I can better meet ESG standards and requirements."
+
+*"As a manager, I want to access a user-friendly dashboard in Blazor where I can see ESG key metrics over time and receive recommendations for improvements, 
+so I can better meet ESG standards and requirements."*
 
