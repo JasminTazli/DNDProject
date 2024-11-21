@@ -7,6 +7,11 @@ When this is clicked the ESG Data is displayed and the user can click on the spe
 ![62be3d58-d98b-4363-bac8-9c8003153498](https://github.com/user-attachments/assets/d3fbf028-28c7-4df2-9425-433d627858e9)
 
 ![image](https://github.com/user-attachments/assets/66eb9421-2b7a-491d-9016-4da7182bc8d5)
+![image](https://github.com/user-attachments/assets/0f46ef61-de86-4c1d-9455-12ee21a0d078)
+![image](https://github.com/user-attachments/assets/3e11eefe-d02c-46ca-aef8-a14f8f5c1f76)
+![image](https://github.com/user-attachments/assets/4c8fd58e-36b6-4454-8d8f-96da36ca8219)
+![image](https://github.com/user-attachments/assets/2a4722b5-00f4-4015-8937-303b2064856c)
+
 
 
 
