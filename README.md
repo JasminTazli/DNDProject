@@ -11,3 +11,6 @@ Blog 1
 
 Blog 2 
 [https://github.com/JasminTazli/DNDProject/blob/main/Blog2.md)
+
+Blog 3 
+[https://github.com/JasminTazli/DNDProject/blob/main/Blog3.md)
