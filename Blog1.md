@@ -21,18 +21,10 @@ Frontend in Blazor: An interactive web application that provides a user-friendly
 
 **User Stories**
 
-RESTful Webservice for data collection:
+- As a user, I want to see the environmental KPI’S for Nilfisk to improve sustainability and share progress with customers.
 
-- As a company, I want to connect my internal systems to a RESTful Webservice so that I can collect data on the environmental impact of my products and other ESG-related metrics.
+- As an admin, I want a secure login so that I can access all relevant data. 
 
-Login with roles:
+- As an admin, I want to add data to keep sustainability metrics accurate and up-to-date for reporting.
 
-- As a user, I want to log in to the system with my credentials so that I can access data based on my role (e.g., administrator or employee).
-
-Administrator data management:
-
-- As an administrator, I want to enter and update ESG data in the system so that all relevant users can see the latest information and changes.
-
-Blazor frontend with dashboard:
-
-- As a manager, I want to access a user-friendly dashboard in Blazor where I can see ESG key metrics over time and receive recommendations for improvements, so I can better meet ESG standards and requirements.
+- As a user, I want an about page where I can read about the ESG report so that I can understand Nilfisk's sustainability initiatives and reporting methods. 
