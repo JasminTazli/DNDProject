@@ -35,4 +35,20 @@ This interface defines the methods for user validation and registration.
 
 This component handles the login form and calls the LoginAsync method from the IAuthService.
 
+**CustomAuthProvider.cs:**
 
+![image](https://github.com/user-attachments/assets/32ff9519-d736-4dbb-acd7-c3daf07d9d00)
+
+This class provides the authentication state to the Blazor components.
+
+**JwtAuthService.cs:**
+
+![image](https://github.com/user-attachments/assets/2017b54e-82e9-4132-a91c-901298d647a8)
+
+![image](https://github.com/user-attachments/assets/a82dc104-3c3a-4454-a008-867d2f7a3f6a)
+
+This service handles the login, logout, and token management on the client side.
+
+
+
+## Access to ressources between different actors
