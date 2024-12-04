@@ -1,0 +1,51 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/images/Background1.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .welcome-container {
+        text-align: left;
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+        padding-left: 20px; 
+    }
+    .welcome-message {
+        font-size: 2em;
+    }
+</style>
+
+<div class="background"></div>
+
+<AuthorizeView>
+    <Authorized>
+        <div class="welcome-container">
+            <h1 class="welcome-message">Welcome, @context.User.Claims.First(claim => claim.Type.Equals("Username")).Value!</h1>
+            <p class="sub-message">We're glad to have you back. Explore the dashboard to see the latest data.</p>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <div class="welcome-container">
+            <h1 class="welcome-message">Welcome to Nilfisk ESG Dashboard</h1>
+            <p class="sub-message">Please login to add or see detailed data.</p>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>

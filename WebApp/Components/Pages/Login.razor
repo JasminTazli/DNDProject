@@ -1,0 +1,100 @@
+@page "/login"
+@using WebApp.Services.Http
+@inject IAuthService authService
+@inject NavigationManager navMgr
+
+<style>
+    .login-card {
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+    .login-card h3 {
+        text-align: center;
+        color: #2c3e50;
+    }
+    .login-field {
+        margin-bottom: 15px;
+    }
+    .login-field label {
+        display: block;
+        margin-bottom: 5px;
+        color: #34495e;
+    }
+    .login-field input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+    }
+    .login-error {
+        color: red;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .login-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(65, 75, 86);
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .login-btn:hover {
+        background-color: rgba(26, 32, 38, 1);
+    }
+</style>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="login-card">
+            <h3>Please Login</h3>
+            <div class="login-field">
+                <label>User Name:</label>
+                <input type="text" @bind="userName" />
+            </div>
+            <div class="login-field">
+                <label>Password:</label>
+                <input type="password" @bind="password" />
+            </div>
+            @if (!string.IsNullOrEmpty(errorLabel))
+            {
+                <div class="login-error">
+                    @errorLabel
+                </div>
+            }
+            <div class="login-field">
+                <button class="login-btn" @onclick="LoginAsync">Log In</button>
+            </div>
+        </div>
+    </NotAuthorized>
+    <Authorized>
+        <div class="card">
+            <h3>Hello, @context.User.Claims.First(claim => claim.Type.Equals("Username")).Value</h3>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private string userName = "";
+    private string password = "";
+    private string errorLabel = "";
+    private async Task LoginAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            await authService.LoginAsync(userName, password);
+            navMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}
