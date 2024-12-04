@@ -20,3 +20,6 @@ Blog 4
 
 Blog 5
 [https://github.com/JasminTazli/DNDProject/blob/main/Blog5.md)
+
+Blog 6
+[https://github.com/JasminTazli/DNDProject/blob/main/Blog6.md) 
