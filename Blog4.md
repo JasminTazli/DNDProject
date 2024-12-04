@@ -42,13 +42,17 @@ This component handles the login form and calls the LoginAsync method from the I
 This class provides the authentication state to the Blazor components.
 
 **JwtAuthService.cs:**
+- Properties
+  - Jwt: Stores the JWT token.
+OnAuthStateChanged: An action that gets invoked when the authentication state changes.
+Methods
+LoginAsync
 
-![image](https://github.com/user-attachments/assets/2017b54e-82e9-4132-a91c-901298d647a8)
-
-![image](https://github.com/user-attachments/assets/a82dc104-3c3a-4454-a008-867d2f7a3f6a)
-
-This service handles the login, logout, and token management on the client side.
-
+This method handles the login process.
+It creates a UserLoginDto object with the provided username and password.
+Serializes the object to JSON and sends it to the server via an HTTP POST request.
+If the response is successful, it extracts the JWT token from the response and caches it.
+It then creates a ClaimsPrincipal from the JWT and invokes OnAuthStateChanged.
 
 
 ## Access to ressources between different actors
