@@ -2,8 +2,11 @@
 
 **Group Members:** 
 - Jasmin Tazli - 316993
+  
     GitHub: JasminTazli
+
 - Marcus Eduard - 316974
+  
     GitHub MarcusEduard
 
 Since we are only two group members, all contributions to this project have been made collectively. 
