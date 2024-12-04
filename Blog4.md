@@ -44,15 +44,19 @@ This class provides the authentication state to the Blazor components.
 **JwtAuthService.cs:**
 - Properties
   - Jwt: Stores the JWT token.
-OnAuthStateChanged: An action that gets invoked when the authentication state changes.
-Methods
-LoginAsync
+  - OnAuthStateChanged: An action that gets invoked when the authentication state changes.
+    
+- Methods
+  - LoginAsync: This method handles the login process. It creates a UserLoginDto object with the provided username and password.
+    Serializes the object to JSON and sends it to the server via an HTTP POST request. If the response is successful, it extracts the JWT token from the response and caches it.
+    It then creates a ClaimsPrincipal from the JWT and invokes OnAuthStateChanged.
+    
+![image](https://github.com/user-attachments/assets/70009347-b52a-42fc-87f2-d27bed90b603)
 
-This method handles the login process.
-It creates a UserLoginDto object with the provided username and password.
-Serializes the object to JSON and sends it to the server via an HTTP POST request.
-If the response is successful, it extracts the JWT token from the response and caches it.
-It then creates a ClaimsPrincipal from the JWT and invokes OnAuthStateChanged.
+  - CreateClaimsPrincipal This method creates a ClaimsPrincipal from the JWT token. It first checks if there is a cached token and uses it if available. It adds the JWT token to the HTTP
+    client's authorization header. Parses the claims from the JWT and creates a ClaimsIdentity and ClaimsPrincipal.
+    
+![image](https://github.com/user-attachments/assets/e57b21b3-d321-41a8-8e68-c372774370b5)
 
 
 ## Access to ressources between different actors
