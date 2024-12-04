@@ -13,14 +13,17 @@ LINQ queries are written in C# and checked at compile time, while SQL queries ar
 LINQ Example:
 
 In EdataService.cs:
+
 ![image](https://github.com/user-attachments/assets/9c7a273a-15d1-4bdc-a756-2c036f669967)
 
 SQL Example:
 
 In ESGContext.cs:
+
 ![image](https://github.com/user-attachments/assets/31858056-1e54-49f3-8388-548bbf8fc66d)
 
 Differences: 
+
 LINQ in C# is good because:
 - It's built right into C#, so the computer can check for mistakes before running your code
 - It helps prevent errors by making sure you're working with the right kind of data
