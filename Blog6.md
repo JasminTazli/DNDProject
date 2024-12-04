@@ -10,10 +10,10 @@ The system includes a RESTful web service, the frontend is built with Blazor, an
 Furthermore, the system includes login functionality, and data is stored using an ORM and SQLite.
 
 **Requirements** 
+
 At the start of the project we made some requirements but after working further with the application and going furhter into the process 
 we realized that we needed to change our requirements as they were not specific nor relevant for the application. The finalized requirements are therefore as follows: 
 
-<em>
 - As a user, I want to view Nilfisk’s environmental KPIs to enhance sustainability and share progress with customers.
 - As an admin, I want a secure login to access all relevant data.
 - As an admin, I want to add data to keep sustainability metrics accurate and up-to-date for reporting.
