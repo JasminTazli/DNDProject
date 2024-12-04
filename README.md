@@ -6,6 +6,8 @@ Group Members:
 - Marcus Eduard - 316974
     GitHub MarcusEduard
 
+Since we are only two group members, all contributions to this project have been made collectively. 
+
 Blog 1
 [https://github.com/JasminTazli/DNDProject/blob/main/Blog1.md)
 
