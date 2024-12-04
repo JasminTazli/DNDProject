@@ -9,21 +9,30 @@ The ESG Tracker system defines two primary user categories:Guest Users and Regis
 **Registered Users** include admin who must log in to access their features. The admin has access to the "Add / Edit Data page", 
 where the admin can either; edit, add or edit data in the different tables. 
 
-**Login Functionality**
-AuthController.cs:
+## Login Functionality 
+
+**AuthController.cs:**
 
 ![image](https://github.com/user-attachments/assets/4c1a8f0f-c31e-41f2-bb8a-22bea5bba504)
 
 This controller handles the login request and generates a JWT token upon successful authentication. 
 
-AuthService.cs:
+**AuthService.cs:**
 
 ![image](https://github.com/user-attachments/assets/53e06753-9948-4a38-a281-e202118561d2)
 
 This service validates the user credentials and registers new users.
 
-IAuthService.cs:
+**IAuthService.cs:**
 
 ![image](https://github.com/user-attachments/assets/4647317a-d569-4726-820a-51eb783e1c77)
 
 This interface defines the methods for user validation and registration.
+
+**Login.razor** 
+
+![image](https://github.com/user-attachments/assets/5c26b51a-ba71-4158-84c4-68a38e97dbb8)
+
+This component handles the login form and calls the LoginAsync method from the IAuthService.
+
+
