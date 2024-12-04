@@ -25,3 +25,8 @@ Blog 5
 
 Blog 6
 [https://github.com/JasminTazli/DNDProject/blob/main/Blog6.md) 
+
+### Details needed for testing 
+Login for Admin:
+- Username: Jasmin 
+- Password: Fedeko
