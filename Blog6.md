@@ -13,10 +13,10 @@ Furthermore, the system includes login functionality, and data is stored using a
 At the start of the project we made some requirements but after working further with the application and going furhter into the process 
 we realized that we needed to change our requirements as they were not specific nor relevant for the application. The finalized requirements are therefore as follows: 
 
-- As a user, I want to view Nilfisk’s environmental KPIs to enhance sustainability and share progress with customers.
+<em>- As a user, I want to view Nilfisk’s environmental KPIs to enhance sustainability and share progress with customers.
 - As an admin, I want a secure login to access all relevant data.
 - As an admin, I want to add data to keep sustainability metrics accurate and up-to-date for reporting.
-- As a user, I want an "About" page to learn about the ESG report and understand Nilfisk's sustainability initiatives and reporting methods.
+- As a user, I want an "About" page to learn about the ESG report and understand Nilfisk's sustainability initiatives and reporting methods.<em>
 
 And all of these requirements have been met. 
 
