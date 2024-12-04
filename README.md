@@ -9,7 +9,7 @@
   
     GitHub MarcusEduard
 
-Since we are only two group members, all contributions to this project have been made collectively. 
+Since we are only two group members, all contributions to this project has been made collectively. 
 
 **Blog 1:**
 [https://github.com/JasminTazli/DNDProject/blob/main/Blog1.md)
