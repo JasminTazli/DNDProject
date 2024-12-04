@@ -7,7 +7,7 @@ The ESG Tracker system defines two primary user categories:Guest Users and Regis
 **Guest Users** are Nilfisk employees who access the platform without logging in. They have limited functionality, such as only viewing general ESG KPI's or the about page shared by the organization. 
 
 **Registered Users** include admin who must log in to access their features. The admin has access to the "Add / Edit Data page", 
-where the admin can either; edit, add or edit data in the different tables. 
+where the admin can either; edit, add or delete data in the different tables. 
 
 ## Login Functionality 
 
@@ -60,3 +60,11 @@ This class provides the authentication state to the Blazor components.
 
 
 ## Access to ressources between different actors
+As mentioned abve, only the admin can see the "Add / Edit Data Page" and only the admin has access to it where the admin can either; edit, add or delete data in the different tables.
+When you are not logged in and using it as a regular Nilfisk Employee wanting to just see the data, the "Add / Edit Data Page" is not 
+visible as it should only be the admin that has access to it. 
+
+![image](https://github.com/user-attachments/assets/75b9c268-48d0-444d-a96e-c20215a4c412)
+
+![image](https://github.com/user-attachments/assets/46653188-1d2d-4f4b-b1cd-b7c4c63f9824)
+
