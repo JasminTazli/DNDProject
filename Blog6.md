@@ -31,4 +31,4 @@ But, we decided to include them as some of the features are still functional.
 
 **Link to online video demonstration** 
 
-[https://youtu.be/HY8E0ezhT_g)
+[https://www.youtube.com/watch?v=ee6Ib3nIXJU)
