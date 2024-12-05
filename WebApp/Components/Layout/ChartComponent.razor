@@ -1,0 +1,62 @@
+@using WebAPI.Models
+@using System.Text.Json
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+
+<style>
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+<div class="chart-container">
+    <div class="chart-column">
+        <canvas id="totalEnergyChart" width="200" height="100"></canvas>
+        <canvas id="crudeFuelChart" width="200" height="100"></canvas>
+        <canvas id="gasFuelChart" width="200" height="100"></canvas>
+        <canvas id="purchElecChart" width="200" height="100"></canvas>
+        <canvas id="renewEnergyChart" width="200" height="100"></canvas>
+        <canvas id="fossilEnergyChart" width="200" height="100"></canvas>
+    </div>
+    <div class="chart-column">
+        <canvas id="edataGraph" width="400" height="200"></canvas>
+        <canvas id="greenhouseGraph" width="400" height="200"></canvas>
+        <canvas id="waterGraph" width="400" height="200"></canvas>
+    </div>
+    <div class="chart-column">
+        <canvas id="scope12MarketChart" width="200" height="100"></canvas>
+        <canvas id="scope12LocationChart" width="200" height="100"></canvas>
+        <canvas id="scope3SoldProductsChart" width="200" height="100"></canvas>
+        <canvas id="waterConsumptionChart" width="200" height="100"></canvas>
+        <canvas id="waterRecycledChart" width="200" height="100"></canvas>
+        <canvas id="totalWasteChart" width="200" height="100"></canvas>
+    </div>
+</div>
+
+@code {
+    private List<Edata> edataList = new List<Edata>();
+    private List<GreenHouse> greenHouseList = new List<GreenHouse>();
+    private List<Water> waterList = new List<Water>();
+    private List<Waste> wasteList = new List<Waste>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        edataList = await Http.GetFromJsonAsync<List<Edata>>("api/edata");
+        greenHouseList = await Http.GetFromJsonAsync<List<GreenHouse>>("api/greenhouse");
+        waterList = await Http.GetFromJsonAsync<List<Water>>("api/water");
+        wasteList = await Http.GetFromJsonAsync<List<Waste>>("api/waste");
+        await JSRuntime.InvokeVoidAsync("drawCharts", edataList, greenHouseList, waterList, wasteList);
+    }
+}
