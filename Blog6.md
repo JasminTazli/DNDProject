@@ -20,10 +20,14 @@ we realized that we needed to change our requirements as they were not specific 
 - As an admin, I want a secure login to access all relevant data.
 - As an admin, I want to add, edit and delete data to keep sustainability metrics accurate and up-to-date for reporting.
 - As a user, I want an "About" page to learn about the ESG report and understand Nilfisk's sustainability initiatives and reporting methods.
+- As a user, I want a visual dashboard showing environmental data to make quick decisions and share updates with stakeholders.
+- As a user, I want a filter function, so that I can sort and view specific environmental data based on criteria enabling me to focus on the relevant information for decision-making.
+
 
 </em>
 
-And all of these requirements have been met. 
+ll of these requirements have been met; however, the visual dashboard and filter function (the last two requirements) do not fully work as intended. 
+But, we decided to include them as some of the features are still functional. 
 
 **Link to online video demonstration** 
 
